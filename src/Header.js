@@ -21,7 +21,7 @@ function Header(){
 
     return (
         <div className='header'> 
-        <Link to="/" className='logo-link'> <div className='logo'> <NewsLogo/> HackerNews</div> </Link>
+        <Link to="/" className='logo-link'> <div className='logo' onClick={()=> {setSearchQuery("")}}> <NewsLogo/> HackerNews</div> </Link>
         <div> 
           <Box sx={{ display: 'flex', alignItems: 'flex-end' }}>
             <Search sx={{ color: 'action.active', mr: 1, my: 0.5 }} />
